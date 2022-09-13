@@ -1,0 +1,149 @@
+/* imports de fonts */
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* flex para centralizar o formulário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3A404E;
+    background-image: radial-gradient(red, yellow, red);
+    color: white;
+    font-family: "Roboto-Regular";
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(106, 104, 224);
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 1em;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.logo{
+    width: 90%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ababab;
+}
+
+.linha:first-of-type {
+    border-bottom: 1px solid #ababab;
+}
+
+.linha input {
+    font-size: 1em;
+    height: 30px;
+    width: 100%;
+    padding-left: 10px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.linha input::placeholder {
+    color: #ababab;
+}
+
+.message {
+    margin-top: 10px;
+    text-align: center;
+    color: lightgreen;
+    height: 25px;
+}
+
+.button{
+    display: block;    
+    padding: 20px;
+    width: 60%;
+    margin: 25px auto 0;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-family: "Roboto-Regular";
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.entrar {    
+    background-color: #0a992b;
+    color: white; 
+}
+
+.confirmar {    
+    background-color: #0A5599;
+    color: white;
+}
+
+.cadastrar{
+  background-color: white;
+  color: black;
+}
+
+.voltar {    
+    background-color: orange;
+    color: white;     
+}
+
+
+/* Mobile */
+@media screen and (max-width: 768px ){
+    .button {
+        width: 100%;
+    } 
+}
+
+/* Tablet */
+@media screen and (min-width: 768px ) and (max-width: 900px ) {
+    .container {
+        max-width: 600px;
+    } 
+    .button {
+        width: 80%;
+    }
+    form{
+        padding: 0% 15% 0% 15%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 900px ) {
+    .container {
+        max-width: 900px;
+    } 
+    .button {
+        width: 60%;
+    } 
+    form{
+        padding: 0% 15% 0% 15%;
+    }
+    .logo{
+        width: 50%;
+    }
+}
